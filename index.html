@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<script src="jquery.min.js"></script>
+
+
+	<style>
+		body{
+			font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 13px;
+			background-color: #4b7eff;
+		}
+		.myPopup{
+			width: 100%;
+			min-width: 200px;
+			max-width: 1000px;
+			min-height: 150px;
+			max-height: 700px;
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+
+    /*-- our cleafix hack -- */
+    .row:before,
+    .row:after {
+        content:"";
+          display: table ;
+        clear:both;
+    }
+
+		/*-- setting border box on all elements inside the grid --*/
+    *{
+        box-sizing: border-box;
+    }
+
+		[class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 50%;
+				padding: 0px;
+				padding-left: 25px;
+    }
+
+    .col-1{ width: 25%; }
+    .col-2{ width: 50%; }
+    .col-3{ width: 30%;  }
+    .col-4{ width: 100%; }
+
+	</style>
+</head>
+
+<body>
+	<div class="myPopup">
+		<div class="row">
+			<!-- <p id="demo">A Paragraph.</p> -->
+
+			<center><img src="favicon2.png" alt="watchit" style="width:100px;height:100px;"> <br>
+		</div>
+		<div class="row">
+			<p><font size="3"><center>
+				<img src="WatchitTextLogo.png" alt="watchitlogo" hspace="20" style="width:130px; height:49px;">
+			</center></P>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<img class="button1" src="Facebooklogo.png" alt="facebook" hspace="20" style="width:50px; height:50px;">
+			</div>
+			<div class="col-2">
+				<img class="button2" src="Instagramlogo.png" alt="instagram" hspace="20" style="width:50px; height:50px;">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<img class="button3" src="Pinterestlogo.png" alt="pinterest" hspace="20" style="width:50px; height:50px;">
+			</div>
+			<div class="col-2">
+				<img class="button4" src="Twitterlogo.png" alt="twitter" hspace="20" style="width:50px; height:50px;">
+			</div>
+			<!-- 	<form id="ajax-contact" method="post" action="mailer.php">
+			   <section id="left">
+			      <label for="form_name">Name</label>
+			      <input name="form_name" id="form_name" type="text" >
+
+			      <label for="form_email">Email</label>
+			      <input name="form_email" id="form_email" type="email" >
+			   </section>
+
+			   <section id="right">
+			      <label for="form_msg">Message</label>
+			      <textarea name="form_msg" id="form_msg"></textarea>
+			      <input id="submit" class="button" name="submit" type="submit" value="Send">
+			   </section>
+
+			</form> -->
+		</div>
+			<!-- <script src="app.js"></script> -->
+	</div>
+	<script src="linkStuff.js"></script>
+	<script src="linkStuff2.js"></script>
+	<script src="linkStuff3.js"></script>
+	<script src="linkStuff4.js"></script>
+</body>
+</html>
